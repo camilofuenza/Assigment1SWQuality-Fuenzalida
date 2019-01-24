@@ -19,17 +19,21 @@ namespace Assigment1SWQuality_Fuenzalida
 
         protected void btnGreen_Click(object sender, EventArgs e)
         {
-            
-            lblConverted.Text=txtOriginal.Text;
-            lblConverted.BackColor = System.Drawing.Color.Green;
+         
+            lblConverted3.Text=txtOriginal.Text;
+            lblConverted3.BackColor = System.Drawing.Color.Green;
+            lblConverted3.Font.Bold = false;
+            lblConverted3.Font.Italic = false;
         }
 
         protected void btnBackwards_Click(object sender, EventArgs e)
         {
-            lblConverted.BackColor = System.Drawing.Color.White;
-            lblConverted.Text=Reverse(txtOriginal.Text);
-          
-    }
+            lblConverted3.BackColor = System.Drawing.Color.White;
+            lblConverted3.Text=Reverse(txtOriginal.Text);
+            lblConverted3.Font.Bold = false;
+            lblConverted3.Font.Italic = false;
+
+        }
         public static string Reverse(string s)
         {
             char[] charArray = s.ToCharArray();
@@ -39,16 +43,18 @@ namespace Assigment1SWQuality_Fuenzalida
 
         protected void btnBold_Click(object sender, EventArgs e)
         {
-            lblConverted.BackColor = System.Drawing.Color.White;
-            lblConverted.Text = txtOriginal.Text;
-            lblConverted.Font.Bold = true;
+            lblConverted3.BackColor = System.Drawing.Color.White;
+            lblConverted3.Text = txtOriginal.Text;
+            lblConverted3.Font.Bold = true;
+            lblConverted3.Font.Italic = false;
         }
 
         protected void btnItalized_Click(object sender, EventArgs e)
         {
-            lblConverted.BackColor = System.Drawing.Color.White;
-            lblConverted.Text = txtOriginal.Text;
-            lblConverted.Font.Italic = true;
+            lblConverted3.BackColor = System.Drawing.Color.White;
+            lblConverted3.Text = txtOriginal.Text;
+            lblConverted3.Font.Bold = false;
+            lblConverted3.Font.Italic = true;
         }
     }
 }

@@ -36,6 +36,12 @@
             width: 254px;
             height: 78px;
         }
+        .txt2{
+             -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;    
+        }
     </style>
 </head>
 <body>
@@ -74,12 +80,15 @@
                     <asp:Button ID="btnItalized" runat="server" OnClick="btnItalized_Click" Text="Italized Text" CssClass="buton"  />
                 </td>
                 <td class="auto-style2">
-                    <asp:Label ID="lblConverted" runat="server" Text="Your text will be converted here!"></asp:Label>
+                    <asp:TextBox ID="lblConverted3" placeholder="Your text will be converted here!" runat="server" Height="82px" Width="239px" CssClass="txt2"></asp:TextBox>
                 </td>
             </tr>
             <tr>
+                
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    
+                </td>
                 <td>&nbsp;</td>
             </tr>
         </table>
