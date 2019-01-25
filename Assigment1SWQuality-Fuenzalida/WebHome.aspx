@@ -86,6 +86,10 @@
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             color:#554F00;
         }
+        .text3 {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:black;
+        }
     </style>
 </head>
 <body>
@@ -123,7 +127,8 @@
                     &nbsp;</td>
                 
                 <td class="auto-style2">
-                    <asp:TextBox ID="txtOriginal" placeholder="Enter your text here!, you can add as many words you want." runat="server" Height="82px" Width="239px" CssClass="txt"></asp:TextBox>
+                    <asp:TextBox ID="txtOriginal" placeholder="Enter your text here!" runat="server" Height="82px" Width="239px" CssClass="txt"></asp:TextBox><br />
+                    <asp:Label ID="Label1" runat="server" Text="*You can add as many words as you want." CssClass="text"></asp:Label>
                 </td>
                 <td class="auto-style2">
                     <asp:Button ID="btnGreen" runat="server" OnClick="btnGreen_Click" Text="Green Text" CssClass="buton text" />
@@ -135,7 +140,8 @@
                     <asp:Button ID="btnItalized" runat="server" OnClick="btnItalized_Click" Text="Italized Text" CssClass="buton text"  />
                 </td>
                 <td class="auto-style9">
-                    <asp:TextBox ID="lblConverted3" placeholder="Your text will be converted here!" runat="server" Height="82px" Width="239px" CssClass="txt2"></asp:TextBox>
+                    <div class="green txt2" style="height:82px; width:239px; background-color:white">
+                        <asp:Label ID="lblgreen" runat="server" Visible="False" CssClass="text3"></asp:Label><asp:TextBox ID="lblConverted3" placeholder="Your text will be converted here!" runat="server" Height="82px" Width="239px" CssClass="txt2"></asp:TextBox></div>
                     </td>
                 <td class="auto-style16">
                     &nbsp;</td>

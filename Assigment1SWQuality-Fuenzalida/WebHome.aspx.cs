@@ -4,7 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+/*[System.Runtime.InteropServices.ComVisible(true)]
+[System.Windows.Forms.Docking(System.Windows.Forms.DockingBehavior.Ask)]
+[System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)]
+public class RichTextBox : System.Windows.Forms.TextBoxBase*/
 namespace Assigment1SWQuality_Fuenzalida
 {
     public partial class WebHome : System.Web.UI.Page
@@ -16,19 +19,22 @@ namespace Assigment1SWQuality_Fuenzalida
             lblConverted3.ReadOnly = true;
         }
         
-
+        
 
         protected void btnGreen_Click(object sender, EventArgs e)
         {
-           
-            lblConverted3.Text=txtOriginal.Text;
-            lblConverted3.BackColor = System.Drawing.Color.Green;
-            lblConverted3.Font.Bold = false;
-            lblConverted3.Font.Italic = false;
+            lblConverted3.Visible = false;
+            lblgreen.Visible = true;
+            lblgreen.Text=txtOriginal.Text;
+            lblgreen.BackColor = System.Drawing.Color.Green;
+            lblgreen.Font.Bold = false;
+            lblgreen.Font.Italic = false;
         }
 
         protected void btnBackwards_Click(object sender, EventArgs e)
         {
+            lblConverted3.Visible = true;
+            lblgreen.Visible = false;
             lblConverted3.BackColor = System.Drawing.Color.White;
             lblConverted3.Text=Reverse(txtOriginal.Text);
             lblConverted3.Font.Bold = false;
@@ -44,6 +50,8 @@ namespace Assigment1SWQuality_Fuenzalida
 
         protected void btnBold_Click(object sender, EventArgs e)
         {
+            lblConverted3.Visible = true;
+            lblgreen.Visible = false;
             lblConverted3.BackColor = System.Drawing.Color.White;
             lblConverted3.Text = txtOriginal.Text;
             lblConverted3.Font.Bold = true;
@@ -52,6 +60,8 @@ namespace Assigment1SWQuality_Fuenzalida
 
         protected void btnItalized_Click(object sender, EventArgs e)
         {
+            lblConverted3.Visible = true;
+            lblgreen.Visible = false;
             lblConverted3.BackColor = System.Drawing.Color.White;
             lblConverted3.Text = txtOriginal.Text;
             lblConverted3.Font.Bold = false;

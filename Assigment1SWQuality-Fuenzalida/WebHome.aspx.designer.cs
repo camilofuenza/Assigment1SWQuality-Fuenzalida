@@ -31,6 +31,15 @@ namespace Assigment1SWQuality_Fuenzalida {
         protected global::System.Web.UI.WebControls.TextBox txtOriginal;
         
         /// <summary>
+        /// Control Label1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+        
+        /// <summary>
         /// Control btnGreen.
         /// </summary>
         /// <remarks>
@@ -65,6 +74,15 @@ namespace Assigment1SWQuality_Fuenzalida {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnItalized;
+        
+        /// <summary>
+        /// Control lblgreen.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblgreen;
         
         /// <summary>
         /// Control lblConverted3.
