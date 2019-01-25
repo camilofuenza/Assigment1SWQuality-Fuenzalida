@@ -10,16 +10,17 @@ namespace Assigment1SWQuality_Fuenzalida
     public partial class WebHome : System.Web.UI.Page
     {
        
+       
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lblConverted3.ReadOnly = true;
         }
+        
 
-      
 
         protected void btnGreen_Click(object sender, EventArgs e)
         {
-         
+           
             lblConverted3.Text=txtOriginal.Text;
             lblConverted3.BackColor = System.Drawing.Color.Green;
             lblConverted3.Font.Bold = false;
