@@ -17,6 +17,7 @@ namespace Assigment1SWQuality_Fuenzalida
         protected void Page_Load(object sender, EventArgs e)
         {
             lblConverted3.ReadOnly = true;
+            lblgreen.Visible = false;
         }
         
         
