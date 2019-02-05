@@ -52,10 +52,6 @@
             height: 31px;
             width: 312px;
         }
-        .auto-style9 {
-            text-align: center;
-            width: 312px;
-        }
         .auto-style10 {
             width: 70px;
         }
@@ -139,6 +135,15 @@
         .auto-style21 {
             width: 312px;
             height: 51px;
+            text-align: center;
+        }
+        .auto-style24 {
+            text-align: center;
+            height: 51px;
+        }
+        .auto-style25 {
+            width: 312px;
+            text-align: center;
         }
     </style>
 </head>
@@ -192,9 +197,9 @@
                     <br /><br />
                     <asp:Button ID="btnItalized" runat="server" OnClick="btnItalized_Click" Text="Italized Text" CssClass="buton text"  />
                 </td>
-                <td class="auto-style9">
+                <td class="auto-style25">
                     <div class="green txt2" style="height:200px; width:239px; background-color:white; word-wrap: break-word;">
-                        <asp:Label ID="lblgreen" runat="server" Visible="False" CssClass="text3" ></asp:Label><asp:TextBox ID="lblConverted3" placeholder="Your text will be converted here!" runat="server" Height="200px" Width="239px" CssClass="txt2 txto" style="overflow:auto;" TextMode="MultiLine" ></asp:TextBox></div>
+                        <asp:Label ID="lblgreen" runat="server" Visible="False" CssClass="text3" ></asp:Label><asp:TextBox ID="lblConverted3" placeholder="Your text will appear here!" runat="server" Height="200px" Width="239px" CssClass="txt2 txto" style="overflow:auto;" TextMode="MultiLine" ></asp:TextBox></div>
                     </td>
                 <td class="auto-style16">
                     &nbsp;</td>
@@ -218,12 +223,27 @@
                     <asp:TextBox ID="txtDecimal" placeholder="Enter your decimal number!" runat="server" Height="23px" Width="239px" CssClass="txto"></asp:TextBox></td>
                 <td class="auto-style2">
                     
-                    <asp:Button ID="btnBinaryConvertion" runat="server" OnClick="btnBinaryConvertion_Click" Text="Convert to Binary" CssClass="buton text" Width="132px"  />
+                    <asp:Button ID="btnBinaryConvertion" runat="server" OnClick="btnBinaryConvertion_Click" Text="D2B" CssClass="buton text" Width="132px"  />
                     
                 </td>
-                <td class="auto-style7">
+                <td class="auto-style25">
                     <asp:TextBox ID="txtBinary" placeholder="Your binary number will appear here!" runat="server" Height="23px" Width="239px" CssClass="txto"></asp:TextBox></td>
                 <td class="auto-style14">&nbsp;</td>
+            </tr>
+            <tr>
+                
+                <td class="auto-style19"></td>
+                
+                <td style="text-align: center" class="auto-style20">
+                    <asp:TextBox ID="txtBinary2" placeholder="Enter your binary number!" runat="server" Height="23px" Width="239px" CssClass="txto"></asp:TextBox></td>
+                <td class="auto-style24">
+                    
+                    <asp:Button ID="btnDecimalConvertion" runat="server" OnClick="btnDecimalConvertion_Click" Text="B2D" CssClass="buton text" Width="132px"  />
+                    
+                </td>
+                <td class="auto-style21">
+                    <asp:TextBox ID="txtDecimal2" placeholder="Your decimal number will appear here!" runat="server" Height="23px" Width="239px" CssClass="txto"></asp:TextBox></td>
+                <td class="auto-style19"></td>
             </tr>
         </table>
     

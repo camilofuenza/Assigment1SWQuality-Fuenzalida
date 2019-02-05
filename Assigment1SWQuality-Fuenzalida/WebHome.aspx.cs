@@ -94,5 +94,23 @@ namespace Assigment1SWQuality_Fuenzalida
             
 
         }
+
+        protected void btnDecimalConvertion_Click(object sender, EventArgs e)
+        {
+            long num, decimal_val = 0, base_val = 1, rem;
+          
+            num = long.Parse(txtBinary2.Text); /* maximum five digits */
+          
+            while (num > 0)
+            {
+                rem = num % 10;
+                decimal_val = decimal_val + rem * base_val;
+                num = num / 10;
+                base_val = base_val * 2;
+            }
+
+            txtDecimal2.Text = decimal_val.ToString();
+           
+        }
     }
 }
