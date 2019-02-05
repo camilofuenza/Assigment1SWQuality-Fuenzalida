@@ -12,21 +12,21 @@ namespace Assigment1SWQuality_Fuenzalida
 {
     public partial class WebHome : System.Web.UI.Page
     {
-       
-       
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             lblConverted3.ReadOnly = true;
             lblgreen.Visible = false;
         }
-        
-        
+
+
 
         protected void btnGreen_Click(object sender, EventArgs e)
         {
             lblConverted3.Visible = false;
             lblgreen.Visible = true;
-            lblgreen.Text=txtOriginal.Text;
+            lblgreen.Text = txtOriginal.Text;
             lblgreen.BackColor = System.Drawing.Color.Green;
             lblgreen.Font.Bold = false;
             lblgreen.Font.Italic = false;
@@ -37,7 +37,7 @@ namespace Assigment1SWQuality_Fuenzalida
             lblConverted3.Visible = true;
             lblgreen.Visible = false;
             lblConverted3.BackColor = System.Drawing.Color.White;
-            lblConverted3.Text=Reverse(txtOriginal.Text);
+            lblConverted3.Text = Reverse(txtOriginal.Text);
             lblConverted3.Font.Bold = false;
             lblConverted3.Font.Italic = false;
 
@@ -67,6 +67,32 @@ namespace Assigment1SWQuality_Fuenzalida
             lblConverted3.Text = txtOriginal.Text;
             lblConverted3.Font.Bold = false;
             lblConverted3.Font.Italic = true;
+        }
+
+        protected void btnBinaryConvertion_Click(object sender, EventArgs e)
+        {
+           
+
+
+                int num;
+
+                num = int.Parse(txtDecimal.Text);
+                int quot;
+                string rem = "";
+                while (num >= 1)
+                {
+                    quot = num / 2;
+                    rem += (num % 2).ToString();
+                    num = quot;
+                }
+                string bin = "";
+                for (int i = rem.Length - 1; i >= 0; i--)
+                {
+                    bin = bin + rem[i];
+                }
+                txtBinary.Text = bin.ToString();
+            
+
         }
     }
 }

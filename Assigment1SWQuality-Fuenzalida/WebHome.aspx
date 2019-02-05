@@ -129,6 +129,17 @@
             width: 2324px;
             height: 1420px;
         }
+        .auto-style19 {
+            width: 70px;
+            height: 51px;
+        }
+        .auto-style20 {
+            height: 51px;
+        }
+        .auto-style21 {
+            width: 312px;
+            height: 51px;
+        }
     </style>
 </head>
 <body>
@@ -190,13 +201,28 @@
             </tr>
             <tr>
                 
-                <td class="auto-style10">&nbsp;</td>
+                <td class="auto-style19"></td>
                 
-                <td>&nbsp;</td>
-                <td>
+                <td class="auto-style20" style="text-align: center"></td>
+                <td class="auto-style20">
                     
                 </td>
-                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style21"></td>
+                <td class="auto-style19"></td>
+            </tr>
+            <tr>
+                
+                <td class="auto-style10">&nbsp;</td>
+                
+                <td style="text-align: center">
+                    <asp:TextBox ID="txtDecimal" placeholder="Enter your decimal number!" runat="server" Height="23px" Width="239px" CssClass="txto"></asp:TextBox></td>
+                <td class="auto-style2">
+                    
+                    <asp:Button ID="btnBinaryConvertion" runat="server" OnClick="btnBinaryConvertion_Click" Text="Convert to Binary" CssClass="buton text" Width="132px"  />
+                    
+                </td>
+                <td class="auto-style7">
+                    <asp:TextBox ID="txtBinary" placeholder="Your binary number will appear here!" runat="server" Height="23px" Width="239px" CssClass="txto"></asp:TextBox></td>
                 <td class="auto-style14">&nbsp;</td>
             </tr>
         </table>
