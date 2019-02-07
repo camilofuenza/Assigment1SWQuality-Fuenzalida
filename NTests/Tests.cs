@@ -21,7 +21,7 @@ namespace NTests
             string actual = n.Decimal2Binary(input);
 
             Assert.AreEqual(output, actual);
-            a
+            
         }
 
         
