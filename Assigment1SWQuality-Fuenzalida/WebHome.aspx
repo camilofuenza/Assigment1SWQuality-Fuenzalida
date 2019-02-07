@@ -199,6 +199,47 @@
                 <td class="auto-style7">&nbsp;</td>
                 <td class="auto-style14">&nbsp;</td>
             </tr>
+                 <tr>
+                
+                <td class="auto-style19"></td>
+                
+                <td class="auto-style20" style="text-align: center"></td>
+                <td class="auto-style20">
+                    
+                </td>
+                <td class="auto-style21"></td>
+                <td class="auto-style19"></td>
+            </tr>
+            <tr>
+                
+                <td class="auto-style10">&nbsp;</td>
+                
+                <td style="text-align: center">
+                    <asp:TextBox ID="txtDecimal" placeholder="Enter your decimal number!" runat="server" Height="23px" Width="239px" CssClass="txto"></asp:TextBox></td>
+                <td class="auto-style2">
+                    
+                    <asp:Button ID="btnBinaryConvertion" runat="server" OnClick="btnBinaryConvertion_Click" Text="D2B" CssClass="buton text" Width="132px"  />
+                    
+                </td>
+                <td class="auto-style25">
+                    <asp:TextBox ID="txtBinary" placeholder="Your binary number will appear here!" runat="server" Height="23px" Width="239px" CssClass="txto"></asp:TextBox></td>
+                <td class="auto-style14">&nbsp;</td>
+            </tr>
+            <tr>
+                
+                <td class="auto-style19"></td>
+                
+                <td style="text-align: center" class="auto-style20">
+                    <asp:TextBox ID="txtBinary2" placeholder="Enter your binary number!" runat="server" Height="23px" Width="239px" CssClass="txto"></asp:TextBox></td>
+                <td class="auto-style24">
+                    
+                    <asp:Button ID="btnDecimalConvertion" runat="server" OnClick="btnDecimalConvertion_Click" Text="B2D" CssClass="buton text" Width="132px"  />
+                    
+                </td>
+                <td class="auto-style21">
+                    <asp:TextBox ID="txtDecimal2" placeholder="Your decimal number will appear here!" runat="server" Height="23px" Width="239px" CssClass="txto"></asp:TextBox></td>
+                <td class="auto-style19"></td>
+            </tr>
         </table>
     
     </div>

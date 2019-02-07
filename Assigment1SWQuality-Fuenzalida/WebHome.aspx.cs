@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -67,6 +68,24 @@ namespace Assigment1SWQuality_Fuenzalida
             lblConverted3.Text = txtOriginal.Text;
             lblConverted3.Font.Bold = false;
             lblConverted3.Font.Italic = true;
+        }
+
+
+        protected void btnBinaryConvertion_Click(object sender, EventArgs e)
+        {
+
+            Convertion n = new Convertion();
+            txtBinary.Text = n.Decimal2Binary(txtDecimal.Text);
+
+
+
+        }
+
+        protected void btnDecimalConvertion_Click(object sender, EventArgs e)
+        {
+            Convertion n = new Convertion();
+            txtDecimal2.Text = n.Binary2Decimal(txtBinary2.Text);
+
         }
     }
 }

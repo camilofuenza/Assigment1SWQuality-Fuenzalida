@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assigment1SWQuality-Fuenzalida", "Assigment1SWQuality-Fuenzalida\Assigment1SWQuality-Fuenzalida.csproj", "{1D18AE33-8849-4EC6-B096-B998B828EE09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{885AE9AD-ABA5-40B2-B7B0-43E7027B462A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTests", "NTests\NTests.csproj", "{D6EEA92E-BCD6-4C7A-94F6-C0EA1FFC165E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +19,19 @@ Global
 		{1D18AE33-8849-4EC6-B096-B998B828EE09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D18AE33-8849-4EC6-B096-B998B828EE09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D18AE33-8849-4EC6-B096-B998B828EE09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{885AE9AD-ABA5-40B2-B7B0-43E7027B462A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{885AE9AD-ABA5-40B2-B7B0-43E7027B462A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{885AE9AD-ABA5-40B2-B7B0-43E7027B462A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{885AE9AD-ABA5-40B2-B7B0-43E7027B462A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6EEA92E-BCD6-4C7A-94F6-C0EA1FFC165E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6EEA92E-BCD6-4C7A-94F6-C0EA1FFC165E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6EEA92E-BCD6-4C7A-94F6-C0EA1FFC165E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6EEA92E-BCD6-4C7A-94F6-C0EA1FFC165E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2B6BC44-FFA6-4B06-B36E-65856BC4058F}
 	EndGlobalSection
 EndGlobal
